@@ -10,7 +10,11 @@ AGENTS = [
 
 @app.route("/")
 def home():
-    return "Dashboard Logistique OK 🚀"
+    return """
+    <h1>📦 Dashboard Logistique</h1>
+    <p>API active 🚀</p>
+    <p>Va sur /api/data pour voir les données</p>
+    """
 
 @app.route("/api/data")
 def data():
